@@ -1,153 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF: Webpack starter kit</title>
-    <meta name="description" content="Your project description" />
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta
-      property="og:image"
-      content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
-    />
-
-    <!-- uncomment the line below to enable PWA  -->
-    <!-- <link rel="manifest" href="manifest.json" /> -->
-
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="pwa/apple-icon-180.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="167x167"
-      href="pwa/apple-icon-167.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="pwa/apple-icon-152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="pwa/apple-icon-120.png"
-    />
-
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-2732.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2732-2048.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2388.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2388-1668.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2224.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2224-1668.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1536-2048.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-1536.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2688.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2688-1242.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1125-2436.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2436-1125.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-828-1792.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1792-828.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2208.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2208-1242.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-750-1334.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1334-750.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-640-1136.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1136-640.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
+    <title>Document</title>
   </head>
+
   <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
-    </div>
+    <header>
+      <nav class="navigation navigation--open navigation--js">
+        <a class="navigation__link" href="index.html">Strona główna</a>
+        <a class="navigation__link" href="prywatne.html">Prywatne</a>
+        <a class="navigation__link" href="brudnopis.html">Brudnopis</a>
+      </nav>
+      <button class="hamburger hamburger--js">🍔</button>
+    </header>
+    <main class="main">
+      <header class="main-header">
+        <h1 class="main-header__title">
+          Notatnik programisty "Nauka Frontendu"
+        </h1>
+      </header>
+      <img
+        class="main-header__image"
+        src="../assets/img/zAlbim.jpeg"
+        alt="Moje zdjęcie z psem"
+      />
+      <section class="articles">
+        <h2 class="articles__heading">Dziennik</h2>
+        <article class="article">
+          <h3 class="article__title">Dzień pierwszy</h3>
+          <p class="article__derscription">
+            Dzisiaj poznałem jedynie podstawy oraz zasady programowania. Będę
+            tworzył ten notatnik codziennie w celu utrwalania dobrych nawyków w
+            HTML. Mam nadzieję że to przybliży mnie to do celu oraz posłuży jako
+            notatnik z mojej podróży. TO...
+          </p>
+        </article>
+        <article class="article">
+          <h3 class="article__title article__title--js">Jest Git</h3>
+          <p class="article__description">
+            W końcu!!! Poznałem tajemne czarne okiernko które kiedyś uważałem za
+            narzędzie dla hakerów. Dzięki Maćkowi wiem z czym to się je oraz
+            poznałem podstawy pracy z Gitem oraz Githubem, teraz już nigdy nie
+            stracę czasu na pisanie czegoś drugi raz i mam zamiar jak najwięcej
+            commitować
+          </p>
+          <p class="article__description article_description--js"></p>
+        </article>
+      </section>
+    </main>
+    <section class="info">
+      <h1 class="info__title">Formularz!</h1>
+      <form
+        class="form"
+        action="https://dev.cotenfrontend.pl"
+        method="POST"
+        name="Karol"
+        riddle="cotenfrontend"
+      >
+        <p class="form__item">
+          <label class="form__label" for="firstName">Your name:</label>
+          <input
+            required
+            class="form__input"
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="Please enter your first name"
+          />
+        </p>
+        <p class="form__item">
+          <label class="form__label" for="lastName">Your last name:</label>
+          <input
+            required
+            class="form__input"
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Please enter your last name"
+          />
+        </p>
+        <p class="form__item">
+          <label class="form__label" for="phoneNumber"
+            >Your phone number:</label
+          >
+          <input
+            class="form__input"
+            type="tel"
+            name="phoneNumber"
+            id="phoneNumber"
+            placeholder="Please enter your phone number"
+          />
+        </p>
+        <p class="form__item">
+          <label class="form__label" for="email">Your e-mail:</label>
+          <input
+            class="form__input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Please enter your e-mail"
+          />
+        </p>
+        <fieldset class="form__fieldset">
+          <legend>Your Address</legend>
+          <p class="form__item">
+            <label class="form__label" for="street">Your street</label>
+            <input
+              class="form__input"
+              type="text"
+              name="street"
+              id="street"
+              placeholder="Please enter your street"
+            />
+          </p>
+          <p class="form__item">
+            <label class="form__label" for="city">Your city</label>
+            <input
+              class="form__input"
+              type="text"
+              name="city"
+              id="city"
+              placeholder="Please enter your city"
+            />
+          </p>
+          <p class="form__item">
+            <label class="form__label" for="plz">Your PLZ</label>
+            <input
+              class="form__input"
+              pattern="[a-zA-Z0-9]+"
+              type="plz"
+              name="plz"
+              id="plz"
+              placeholder="Please enter your PLZ"
+            />
+          </p>
+        </fieldset>
+        <p class="form_item form__item--submit">
+          <input
+            class="form__input form__input--submit"
+            type="submit"
+            name="submit"
+            value="send"
+          />
+        </p>
+      </form>
+    </section>
+    <footer class="footer">Notatnik programisty</footer>
   </body>
 </html>
