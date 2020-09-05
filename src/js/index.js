@@ -5,3 +5,6 @@ import "../scss/main.scss";
 // registerSW();
 
 /* place your code below */
+import moment from "moment";
+
+console.log(moment().startOf("day").fromNow());
