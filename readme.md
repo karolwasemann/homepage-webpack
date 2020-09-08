@@ -2,17 +2,17 @@
 
 # WTF Webpack Starter Kit 
 
-Simple toolkit for your static websites development.
+Zestaw narzędzi do tworzenia ładnych stron statycznych
 
-## How to use it?
+## Jak to uruchomić?
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+Kliknij na przycisk `Użyj tego szablonu`, aby wygenerować nowe repozytorium w oparciu o ten zestaw startowy. Następnie sklonuj je na swój komputer, przejdź do katalogu projektu w konsoli i wpisz `npm install`.
 
-## Available scripts
+## przydatne skrypty
 
-`npm run start` - runs development mode
+`npm run start` - Działaj w trybie deweloperski
 
-`npm run build` - runs build process for production
+`npm run build` - Stwórz dis który możesz opublikować
 
-`npm run publish` - runs build process and publish the page using `gh-pages` branch
+`npm run publish` - Stwórz i opublikuj strone za pomocą gh-pages
 
